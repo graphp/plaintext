@@ -1,6 +1,6 @@
 <?php
 
-class LoaderEdgeList implements Loader{
+class LoaderEdgeList extends LoaderFile{
 	
 	private $debugMode = false;
 	
@@ -13,11 +13,11 @@ class LoaderEdgeList implements Loader{
 	public function __construct(){
 	}
 	
-	public function getGraphFromFile($fileName){
+	public function getGraph(){
 		
 		$graph = new Graph();
 		
-		$file = file($fileName, FILE_IGNORE_NEW_LINES);
+		$file = file($this->fileName, FILE_IGNORE_NEW_LINES);
 		$vertexCount = $file[0];
 		$edgeCounter = 0;
 		
@@ -25,10 +25,10 @@ class LoaderEdgeList implements Loader{
 		
 		unset($file[0]);
 		foreach ($file as $zeile) {
-			$edgeConections = explode("\t", $zeile);
+			$edgeConnections = explode("\t", $zeile);
 			
-			$from = $graph->getVertex($edgeConections[0]);
-			$to = $graph->getVertex($edgeConections[1]);
+			$from = $graph->getVertex($edgeConnections[0]);
+			$to = $graph->getVertex($edgeConnections[1]);
 			
 			$from->createEdge($to);								//TODO directed
 		}
