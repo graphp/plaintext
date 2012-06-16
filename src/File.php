@@ -1,6 +1,11 @@
 <?php
 
-abstract class LoaderFile extends Loader{
+namespace Fhaculty\Graph\Loader;
+
+use Fhaculty\Graph\Graph;
+use \Exception;
+
+abstract class File extends Base{
     protected $fileName;
     
     public function __construct($filename){

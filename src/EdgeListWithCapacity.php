@@ -1,6 +1,10 @@
 <?php
 
-class LoaderEdgeListWeighted extends LoaderFile{
+namespace Fhaculty\Graph\Loader;
+
+use Fhaculty\Graph\Graph;
+
+class EdgeListWithCapacity extends File{
     public function createGraph(){
         
         $graph = new Graph();
@@ -20,7 +24,7 @@ class LoaderEdgeListWeighted extends LoaderFile{
                 $edge = $parts[0]->createEdge($parts[1]);
             }
             
-            $edge->setWeight($parts[2]);
+            $edge->setCapacity($parts[2]);
         }
         
         return $graph;

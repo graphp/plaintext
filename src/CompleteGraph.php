@@ -1,6 +1,10 @@
 <?php
 
-class LoaderCompleteGraph extends Loader{
+namespace Fhaculty\Graph\Loader;
+
+use Fhaculty\Graph\Graph;
+
+class CompleteGraph extends Base{
     
     private $numberOfVertices;
     

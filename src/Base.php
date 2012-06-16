@@ -1,6 +1,8 @@
 <?php
 
-abstract class Loader{
+namespace Fhaculty\Graph\Loader;
+
+abstract class Base{
     
     private $debugMode = false;
     

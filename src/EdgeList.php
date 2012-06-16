@@ -1,6 +1,10 @@
 <?php
 
-class LoaderEdgeList extends LoaderFile{
+namespace Fhaculty\Graph\Loader;
+
+use Fhaculty\Graph\Graph;
+
+class EdgeList extends File{
     public function createGraph(){
         
         $graph = new Graph();

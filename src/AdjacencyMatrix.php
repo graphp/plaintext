@@ -1,6 +1,10 @@
 <?php
 
-class LoaderAdjacencyMatrix extends LoaderFile{
+namespace Fhaculty\Graph\Loader;
+
+use Fhaculty\Graph\Graph;
+
+class AdjacencyMatrix extends File{
     public function createGraph()    {
 
         $graph = new Graph();

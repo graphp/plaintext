@@ -1,5 +1,15 @@
 <?php
 
+namespace Fhaculty\Graph\Loader;
+
+use Fhaculty\Graph\Graph;
+use Fhaculty\Graph\Vertex;
+use Fhaculty\Graph\Edge;
+use Fhaculty\Graph\Algorithm\ConnectedComponents as AlgorithmConnectedComponents;
+use \Exception;
+use \ReflectionClass;
+use \ReflectionParameter;
+
 /**
  * 
  * @author clue
@@ -7,7 +17,7 @@
  * @link http://www.ffnn.nl/pages/articles/media/uml-diagrams-using-graphviz-dot.php
  * @link http://www.holub.com/goodies/uml/
  */
-class LoaderUmlClassDiagram extends Loader{
+class UmlClassDiagram extends Base{
     private $graph;
     
     private $options = array(

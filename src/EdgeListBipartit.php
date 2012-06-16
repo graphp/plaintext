@@ -1,6 +1,12 @@
 <?php
 
-class LoaderEdgeListBipartit extends LoaderFile{
+namespace Fhaculty\Graph\Loader;
+
+use Fhaculty\Graph\Graph;
+use Fhaculty\Graph\Algorithm\Groups as AlgorithmGroups;
+use \Exception;
+
+class EdgeListBipartit extends File{
     public function createGraph(){
 
         $graph = new Graph();
