@@ -1,0 +1,23 @@
+{
+    "name": "graphp/plaintext",
+    "description": "Proprietary plaintext graph format",
+    "keywords": ["Graph loader"],
+    "homepage": "https://github.com/graphp/plaintext",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Lück",
+            "email": "christian@lueck.tv"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "clue/graph": "~0.8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {"Graphp\\Plaintext\\": "src/"}
+    }
+}
