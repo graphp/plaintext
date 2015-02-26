@@ -1,6 +1,6 @@
 <?php
 
-namespace Fhaculty\Graph\Loader;
+namespace Graphp\Plaintext;
 
 abstract class Base
 {

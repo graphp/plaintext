@@ -1,6 +1,6 @@
 <?php
 
-namespace Fhaculty\Graph\Loader;
+namespace Graphp\Plaintext;
 
 use Fhaculty\Graph\Graph;
 use Fhaculty\Graph\Edge\Base as Edge;

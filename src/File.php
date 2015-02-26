@@ -1,6 +1,6 @@
 <?php
 
-namespace Fhaculty\Graph\Loader;
+namespace Graphp\Plaintext;
 
 use Fhaculty\Graph\Exception\InvalidArgumentException;
 use Fhaculty\Graph\Graph;

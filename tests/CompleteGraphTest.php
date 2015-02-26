@@ -1,7 +1,7 @@
 <?php
 
 use Fhaculty\Graph\Graph;
-use Fhaculty\Graph\Loader\CompleteGraph;
+use Graphp\Plaintext\CompleteGraph;
 
 class CompleteGraphTest extends TestCase
 {
