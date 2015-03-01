@@ -11,7 +11,7 @@ The recommended way to install this library is [through composer](http://getcomp
 ```JSON
 {
     "require": {
-        "graphp/plaintext": "dev-master"
+        "graphp/plaintext": "~0.1.0"
     }
 }
 ```
